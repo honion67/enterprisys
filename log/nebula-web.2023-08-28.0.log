@@ -1,0 +1,952 @@
+2023-08-28 09:39:22.377 [main] INFO  cn.enterprisys.WebApplication - Starting WebApplication on LAPTOP-J40OTHIL with PID 1844 (D:\Users\lenovo\Desktop\class\Java\code\enterprisys-web\web\target\classes started by lenovo in D:\Users\lenovo\Desktop\class\Java\code\enterprisys-web)
+2023-08-28 09:39:22.379 [main] DEBUG cn.enterprisys.WebApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2023-08-28 09:39:22.379 [main] INFO  cn.enterprisys.WebApplication - The following profiles are active: dev
+2023-08-28 09:39:24.470 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-28 09:39:24.473 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-28 09:39:24.557 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73ms. Found 0 Redis repository interfaces.
+2023-08-28 09:39:25.043 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.045 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$8c9c4c77] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.051 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-08-28 09:39:25.102 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.109 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.181 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'statFilter' of type [com.alibaba.druid.filter.stat.StatFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.243 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'wallConfig' of type [com.alibaba.druid.wall.WallConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.259 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'wallFilter' of type [com.alibaba.druid.wall.WallFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.354 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-08-28 09:39:25.354 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.383 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.389 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.393 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.395 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.400 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'transactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.401 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'transactionAdviceConfig' of type [cn.enterprisys.web.commons.config.TransactionAdviceConfig$$EnhancerBySpringCGLIB$$926900a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.405 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'txAdvice' of type [org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.405 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'txAdviceAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.417 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.431 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.435 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4d3ca6c7' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.437 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.445 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-28 09:39:25.758 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-08-28 09:39:25.767 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-08-28 09:39:25.768 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 09:39:25.768 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-08-28 09:39:26.386 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/nebula-web] - Initializing Spring embedded WebApplicationContext
+2023-08-28 09:39:26.386 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3950 ms
+2023-08-28 09:39:26.893 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: cn.enterprisys.web.modules.sys.entity.SysRoleByMenu.
+2023-08-28 09:39:27.802 [main] INFO  org.springframework.boot.web.servlet.RegistrationBean - Filter loginInterceptor was not registered (disabled)
+2023-08-28 09:39:28.242 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: cn.enterprisys.web.modules.sys.entity.SysUserRole.
+2023-08-28 09:39:28.544 [main] INFO  o.s.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 70a8abd1-48bb-40d1-a093-69f8b3ea73bf
+
+2023-08-28 09:39:28.591 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/{spring:^(static|druid|images|sign|druid|error)$}/**'], []
+2023-08-28 09:39:28.591 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/{spring:^.*\.((?!html).)*$}'], []
+2023-08-28 09:39:28.641 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3111631d, org.springframework.security.web.context.SecurityContextPersistenceFilter@6744707b, org.springframework.security.web.header.HeaderWriterFilter@625487a6, org.springframework.security.web.authentication.logout.LogoutFilter@23ee2ccf, cn.enterprisys.web.commons.interceptors.LoginInterceptor@32a2a6be, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@37314843, org.springframework.security.web.session.ConcurrentSessionFilter@2bba35ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70f148dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1537e43, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d70f312, org.springframework.security.web.session.SessionManagementFilter@79e10fb4, org.springframework.security.web.access.ExceptionTranslationFilter@4cc8d70d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6568f998]
+2023-08-28 09:39:28.667 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'clientInboundChannelExecutor'
+2023-08-28 09:39:28.678 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'clientOutboundChannelExecutor'
+2023-08-28 09:39:28.687 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'messageBrokerTaskScheduler'
+2023-08-28 09:39:28.727 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'brokerChannelExecutor'
+2023-08-28 09:39:28.987 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-08-28 09:39:30.012 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-08-28 09:39:30.014 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-08-28 09:39:30.481 [main] INFO  org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler - Starting...
+2023-08-28 09:39:30.481 [main] INFO  org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2023-08-28 09:39:30.482 [main] INFO  org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler - Started.
+2023-08-28 09:39:31.079 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-08-28 09:39:31.092 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/nebula-web'
+2023-08-28 09:39:31.094 [main] INFO  cn.enterprisys.WebApplication - Started WebApplication in 9.371 seconds (JVM running for 11.053)
+2023-08-28 09:40:28.736 [MessageBroker-2] INFO  org.springframework.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 1, completed tasks = 1]
+2023-08-28 10:10:28.746 [MessageBroker-1] INFO  org.springframework.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 1, completed tasks = 32]
+2023-08-28 10:17:57.614 [http-nio-8888-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1692845363,1692868770,1692926785] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2023-08-28 10:17:57.620 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/nebula-web] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-28 10:17:57.620 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-28 10:17:57.633 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2023-08-28 10:17:59.062 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 10:17:59.142 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: c5b0f36efe0f5eeb567a4084bc3be1ce(String), Anonymous(String), 登录模块(String), 登录验证码(String), captcha(String), {}(String), 127.0.0.1(String), 644(Long), 2023-08-28T10:17:59.031(LocalDateTime)
+2023-08-28 10:17:59.147 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 10:18:06.881 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE (username = ?) 
+2023-08-28 10:18:06.902 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2023-08-28 10:18:06.931 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectOne - <==      Total: 1
+2023-08-28 10:18:06.943 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.updateById - ==>  Preparing: UPDATE SYS_USER_INFO SET username=?, password=?, old_password=?, nick_name=?, phone=?, email=?, disable=?, login_status=?, create_user_id=?, create_time=?, update_time=?, delete_time=?, login_time=?, dept_id=? WHERE user_id=? 
+2023-08-28 10:18:06.947 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.updateById - ==> Parameters: admin(String), 98124e2a4b96dc88ba01d49345f62a07(String), 98124e2a4b96dc88ba01d49345f62a07(String), admin(String), 13000001112(String), admin@163.com(String), 0(Integer), 0(Integer), (String), 2019-02-19T00:26:39(LocalDateTime), 2019-08-01T03:26:17(LocalDateTime), 2019-08-02T09:18:27(LocalDateTime), 2023-08-28T10:18:06.938(LocalDateTime), OR1200000703(String), 1115864462813077506(String)
+2023-08-28 10:18:06.949 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.updateById - <==    Updates: 1
+2023-08-28 10:18:06.953 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserLoginLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_LOGIN_LOG ( ID, USER_NAME, LOGIN_TIME, IP_ADDRESS, DURATION ) VALUES ( ?, ?, ?, ?, ? ) 
+2023-08-28 10:18:06.954 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserLoginLogMapper.insert - ==> Parameters: 5b85804e34f1445dd0c31f89146cc5d3(String), admin(String), 2023-08-28T10:18:06.851(LocalDateTime), 127.0.0.1(String), 0(Long)
+2023-08-28 10:18:06.956 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserLoginLogMapper.insert - <==    Updates: 1
+2023-08-28 10:18:06.962 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 10:18:06.962 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: 50b4a96a97705547c73fd536d685eab2(String), admin(String), 登录模块(String), 用户登录(String), login(String), {}(String), 127.0.0.1(String), 163(Long), 2023-08-28T10:18:06.961(LocalDateTime)
+2023-08-28 10:18:06.964 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 10:18:07.032 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/
+2023-08-28 10:18:07.033 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 10:18:07.035 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 10:18:07.036 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 10:18:07.054 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO ORDER BY SORT DESC 
+2023-08-28 10:18:07.060 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 10:18:07.072 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 10:18:07.092 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO ORDER BY SORT DESC 
+2023-08-28 10:18:07.092 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 10:18:07.097 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 10:18:07.321 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/main.html
+2023-08-28 10:18:07.323 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 10:18:07.324 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 10:18:07.330 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 10:18:12.965 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/list.html
+2023-08-28 10:18:12.969 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 10:18:12.970 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 10:18:12.971 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 10:18:13.290 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/list
+2023-08-28 10:18:13.290 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 10:18:13.291 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 10:18:13.293 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 10:18:13.331 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM app_demo 
+2023-08-28 10:18:13.333 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==> Parameters: 
+2023-08-28 10:18:13.346 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==>  Preparing: SELECT ID,NAME,CREATE_TIME,INFO,AGE FROM app_demo LIMIT ?,? 
+2023-08-28 10:18:13.347 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 10:18:13.349 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - <==      Total: 8
+2023-08-28 10:18:14.427 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/demo/list.html
+2023-08-28 10:18:14.428 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 10:18:14.428 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 10:18:14.430 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 10:18:14.513 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/demo/demoList
+2023-08-28 10:18:14.514 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 10:18:14.514 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 10:18:14.515 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 10:18:14.522 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM DEMO 
+2023-08-28 10:18:14.523 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==> Parameters: 
+2023-08-28 10:18:14.527 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==>  Preparing: SELECT id,name,info,create_time,age FROM DEMO LIMIT ?,? 
+2023-08-28 10:18:14.528 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 10:18:14.530 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - <==      Total: 8
+2023-08-28 10:40:28.754 [MessageBroker-3] INFO  org.springframework.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 1, completed tasks = 63]
+2023-08-28 10:48:11.039 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/demo/demoList
+2023-08-28 10:48:11.045 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 10:48:11.046 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 10:48:11.047 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 10:48:11.050 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO ORDER BY SORT DESC 
+2023-08-28 10:48:11.050 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 10:48:11.055 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 10:48:11.060 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM DEMO 
+2023-08-28 10:48:11.061 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==> Parameters: 
+2023-08-28 10:48:11.064 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==>  Preparing: SELECT id,name,info,create_time,age FROM DEMO LIMIT ?,? 
+2023-08-28 10:48:11.064 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 10:48:11.066 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - <==      Total: 8
+2023-08-28 11:10:28.762 [MessageBroker-2] INFO  org.springframework.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 1, completed tasks = 94]
+2023-08-28 11:11:48.182 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/list.html
+2023-08-28 11:11:48.183 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:11:48.184 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:11:48.185 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:11:48.188 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO ORDER BY SORT DESC 
+2023-08-28 11:11:48.189 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 11:11:48.198 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 11:12:03.834 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/index/.html
+2023-08-28 11:12:03.841 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:03.842 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:03.846 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:08.049 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/index.html
+2023-08-28 11:12:08.053 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:08.054 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:08.055 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:18.451 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/list.html
+2023-08-28 11:12:18.456 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:18.457 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:18.458 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:18.666 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/list
+2023-08-28 11:12:18.671 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:18.671 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:18.673 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:18.678 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM app_demo 
+2023-08-28 11:12:18.679 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==> Parameters: 
+2023-08-28 11:12:18.681 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==>  Preparing: SELECT ID,NAME,CREATE_TIME,INFO,AGE FROM app_demo LIMIT ?,? 
+2023-08-28 11:12:18.681 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 11:12:18.686 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - <==      Total: 8
+2023-08-28 11:12:31.022 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/index.html
+2023-08-28 11:12:31.029 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:31.030 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:31.031 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:32.079 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/index/.html
+2023-08-28 11:12:32.080 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:32.080 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:32.081 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:32.981 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/list.html
+2023-08-28 11:12:32.981 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:32.982 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:32.984 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:33.713 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/
+2023-08-28 11:12:33.713 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:33.713 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:33.714 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:33.717 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO ORDER BY SORT DESC 
+2023-08-28 11:12:33.717 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 11:12:33.720 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 11:12:33.756 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/main.html
+2023-08-28 11:12:33.757 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:33.757 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:33.758 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:38.222 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/custinfo/list.html
+2023-08-28 11:12:38.227 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:38.227 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:38.228 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:38.358 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/custinfo/list
+2023-08-28 11:12:38.358 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:38.359 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:38.360 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:38.371 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM tb_customer 
+2023-08-28 11:12:38.374 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectPage - ==> Parameters: 
+2023-08-28 11:12:38.381 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectPage - ==>  Preparing: SELECT id,customer_name,legal_leader,register_date,open_status,province,reg_capital,industry,scope,reg_addr,input_time,update_time,input_user_id FROM tb_customer LIMIT ?,? 
+2023-08-28 11:12:38.381 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 11:12:38.383 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectPage - <==      Total: 4
+2023-08-28 11:12:39.172 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/linkman/list.html
+2023-08-28 11:12:39.172 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:39.173 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:39.173 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:39.178 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectList - ==>  Preparing: SELECT id,customer_name,legal_leader,register_date,open_status,province,reg_capital,industry,scope,reg_addr,input_time,update_time,input_user_id FROM tb_customer 
+2023-08-28 11:12:39.179 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectList - ==> Parameters: 
+2023-08-28 11:12:39.182 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectList - <==      Total: 4
+2023-08-28 11:12:39.288 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/linkman/list
+2023-08-28 11:12:39.289 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:39.289 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:39.291 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:39.298 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.linkman.mapper.TbCustLinkmanMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM tb_cust_linkman 
+2023-08-28 11:12:39.299 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.linkman.mapper.TbCustLinkmanMapper.selectPage - ==> Parameters: 
+2023-08-28 11:12:39.304 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.linkman.mapper.TbCustLinkmanMapper.selectPage - ==>  Preparing: SELECT id,cust_id,linkman,sex,age,phone,position,department,remark,office_status,input_user,input_time FROM tb_cust_linkman LIMIT ?,? 
+2023-08-28 11:12:39.305 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.linkman.mapper.TbCustLinkmanMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 11:12:39.306 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.linkman.mapper.TbCustLinkmanMapper.selectPage - <==      Total: 4
+2023-08-28 11:12:39.307 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectById - ==>  Preparing: SELECT id,customer_name,legal_leader,register_date,open_status,province,reg_capital,industry,scope,reg_addr,input_time,update_time,input_user_id FROM tb_customer WHERE id=? 
+2023-08-28 11:12:39.307 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectById - ==> Parameters: b3f65b2d929e48dd5838721d84400625(String)
+2023-08-28 11:12:39.308 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectById - <==      Total: 1
+2023-08-28 11:12:39.309 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectById - ==>  Preparing: SELECT id,customer_name,legal_leader,register_date,open_status,province,reg_capital,industry,scope,reg_addr,input_time,update_time,input_user_id FROM tb_customer WHERE id=? 
+2023-08-28 11:12:39.309 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectById - ==> Parameters: 65cff9a0d4f6b84e79c898f57e262837(String)
+2023-08-28 11:12:39.310 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectById - <==      Total: 1
+2023-08-28 11:12:39.310 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectById - ==>  Preparing: SELECT id,customer_name,legal_leader,register_date,open_status,province,reg_capital,industry,scope,reg_addr,input_time,update_time,input_user_id FROM tb_customer WHERE id=? 
+2023-08-28 11:12:39.311 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectById - ==> Parameters: 65cff9a0d4f6b84e79c898f57e262837(String)
+2023-08-28 11:12:39.311 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectById - <==      Total: 1
+2023-08-28 11:12:39.313 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectById - ==>  Preparing: SELECT id,customer_name,legal_leader,register_date,open_status,province,reg_capital,industry,scope,reg_addr,input_time,update_time,input_user_id FROM tb_customer WHERE id=? 
+2023-08-28 11:12:39.313 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectById - ==> Parameters: d1318d329943f2ab8b140b53bc93473e(String)
+2023-08-28 11:12:39.316 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.custinfo.mapper.TbCustomerMapper.selectById - <==      Total: 1
+2023-08-28 11:12:40.046 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/visitinfo/list.html
+2023-08-28 11:12:40.048 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:40.049 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:40.049 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:40.140 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/visitinfo/list
+2023-08-28 11:12:40.140 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:40.140 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:40.141 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:40.149 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.visitinfo.mapper.TbVisitMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM tb_visit 
+2023-08-28 11:12:40.149 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.visitinfo.mapper.TbVisitMapper.selectPage - ==> Parameters: 
+2023-08-28 11:12:40.152 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.visitinfo.mapper.TbVisitMapper.selectPage - ==>  Preparing: SELECT id,cust_id,linkman_id,visit_type,visit_reason,content,visit_date,input_user,input_time FROM tb_visit LIMIT ?,? 
+2023-08-28 11:12:40.153 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.visitinfo.mapper.TbVisitMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 11:12:40.154 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.visitinfo.mapper.TbVisitMapper.selectPage - <==      Total: 1
+2023-08-28 11:12:43.995 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/user/list.html
+2023-08-28 11:12:44.000 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:44.000 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:44.001 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:44.013 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - ==>  Preparing: SELECT ROLE_ID,PID,NUMBER_LEVEL,BUSINESS_LEVEL,ROLE_NAME,DESCRIPTION,ROLE_CODE,CREATE_TIME,DISABLE FROM SYS_ROLE_INFO WHERE (DISABLE = ?) 
+2023-08-28 11:12:44.014 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - ==> Parameters: 0(Integer)
+2023-08-28 11:12:44.017 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - <==      Total: 7
+2023-08-28 11:12:44.219 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/dept/tree
+2023-08-28 11:12:44.219 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:44.219 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:44.220 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:44.225 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/user/userList
+2023-08-28 11:12:44.226 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:44.226 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:44.227 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:44.237 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectList - ==>  Preparing: SELECT dept_id,DEPT_NAME,PARENT_DEPT_ID,DEPT_PATH,NUMBER_LEVEL,BUSINESS_LEVEL,DEPT_LEVEL,DISABLE FROM SYS_DEPT_INFO WHERE (DISABLE = ?) 
+2023-08-28 11:12:44.238 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectList - ==> Parameters: 0(Integer)
+2023-08-28 11:12:44.240 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectList - <==      Total: 5
+2023-08-28 11:12:44.245 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==>  Preparing: SELECT COUNT(1) FROM ( SELECT A.USER_ID, A.USERNAME, A.NICK_NAME, A.PHONE, A.CREATE_TIME, A.UPDATE_TIME, A.EMAIL, A.DISABLE, A.LOGIN_STATUS, A.CREATE_USER_ID, A.DELETE_TIME, A.LOGIN_TIME, A.DEPT_ID, B.DEPT_NAME, B.DEPT_PATH FROM SYS_USER_INFO A LEFT JOIN SYS_DEPT_INFO B ON A.DEPT_ID = B.DEPT_ID ORDER BY A.DISABLE DESC, A.LOGIN_TIME DESC ) TOTAL 
+2023-08-28 11:12:44.253 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==> Parameters: 
+2023-08-28 11:12:44.254 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==>  Preparing: SELECT A.USER_ID, A.USERNAME, A.NICK_NAME, A.PHONE, A.CREATE_TIME, A.UPDATE_TIME, A.EMAIL, A.DISABLE, A.LOGIN_STATUS, A.CREATE_USER_ID, A.DELETE_TIME, A.LOGIN_TIME, A.DEPT_ID, B.DEPT_NAME, B.DEPT_PATH FROM SYS_USER_INFO A LEFT JOIN SYS_DEPT_INFO B ON A.DEPT_ID = B.DEPT_ID ORDER BY A.DISABLE DESC, A.LOGIN_TIME DESC LIMIT ?,? 
+2023-08-28 11:12:44.255 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 11:12:44.257 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - <==      Total: 10
+2023-08-28 11:12:44.260 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 11:12:44.260 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1147850266972839937(String)
+2023-08-28 11:12:44.264 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 11:12:44.265 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 11:12:44.266 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1115864230968729601(String)
+2023-08-28 11:12:44.267 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 11:12:44.268 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 11:12:44.269 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1138460331855884289(String)
+2023-08-28 11:12:44.270 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 2
+2023-08-28 11:12:44.271 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 11:12:44.272 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1138463481715273730(String)
+2023-08-28 11:12:44.272 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 11:12:44.273 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 11:12:44.274 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1138465382401953793(String)
+2023-08-28 11:12:44.275 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 11:12:44.276 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 11:12:44.277 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1157842323041148930(String)
+2023-08-28 11:12:44.278 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 11:12:44.279 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 11:12:44.281 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1157842678214811649(String)
+2023-08-28 11:12:44.282 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 11:12:44.283 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 11:12:44.284 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1227877059054125057(String)
+2023-08-28 11:12:44.286 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 11:12:44.286 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 11:12:44.287 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:44.288 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 11:12:44.288 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 11:12:44.289 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1189475248153251842(String)
+2023-08-28 11:12:44.290 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 11:12:44.304 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 11:12:44.304 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: 7818a4ec53a1e03b4faae97d2ff1505d(String), admin(String), 用户管理(String), 列表(String), page(String), {"limit":"10","page":"1"}(String), 127.0.0.1(String), 56(Long), 2023-08-28T11:12:44.303(LocalDateTime)
+2023-08-28 11:12:44.307 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 11:12:45.295 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/role/list.html
+2023-08-28 11:12:45.297 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:45.297 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:45.298 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:45.386 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/role/roleList
+2023-08-28 11:12:45.386 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:45.387 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:45.387 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:45.399 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - ==>  Preparing: SELECT ROLE_ID,PID,NUMBER_LEVEL,BUSINESS_LEVEL,ROLE_NAME,DESCRIPTION,ROLE_CODE,CREATE_TIME,DISABLE FROM SYS_ROLE_INFO 
+2023-08-28 11:12:45.400 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - ==> Parameters: 
+2023-08-28 11:12:45.401 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - <==      Total: 7
+2023-08-28 11:12:46.258 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/menu/list.html
+2023-08-28 11:12:46.261 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:46.261 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:46.262 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:46.374 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/menu/menuList
+2023-08-28 11:12:46.375 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:46.376 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:46.378 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:46.381 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO 
+2023-08-28 11:12:46.381 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 11:12:46.383 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 11:12:48.138 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/dataDict/dictList.html
+2023-08-28 11:12:48.140 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:48.141 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:48.143 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:48.156 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDictMapper.selectList - ==>  Preparing: SELECT DICE_CODE,DICE_NAME FROM SYS_DICE_INFO ORDER BY SORT DESC 
+2023-08-28 11:12:48.157 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDictMapper.selectList - ==> Parameters: 
+2023-08-28 11:12:48.160 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDictMapper.selectList - <==      Total: 14
+2023-08-28 11:12:48.270 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/dataDict/dictList
+2023-08-28 11:12:48.271 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:48.271 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:48.272 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:48.280 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDictMapper.selectList - ==>  Preparing: SELECT id,DICE_NAME,DICE_CODE,PARENT_DICE_CODE,DICE_VALUE,SORT,DESCRIPTION,DISABLE FROM SYS_DICE_INFO 
+2023-08-28 11:12:48.280 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDictMapper.selectList - ==> Parameters: 
+2023-08-28 11:12:48.282 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDictMapper.selectList - <==      Total: 14
+2023-08-28 11:12:48.282 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 11:12:48.283 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: 89e49b05509dd3b4474e5ea760de27be(String), admin(String), 数据字典(String), 列表(String), page(String), {"diceCodes":"","dictName":""}(String), 127.0.0.1(String), 4(Long), 2023-08-28T11:12:48.282(LocalDateTime)
+2023-08-28 11:12:48.288 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 11:12:48.970 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/config/list.html
+2023-08-28 11:12:48.971 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:48.972 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:48.973 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:49.062 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/config/configList
+2023-08-28 11:12:49.062 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:49.062 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:49.063 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:49.074 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysConfigMapper.selectList - ==>  Preparing: SELECT config_key,parent_key,info,config_value,disable FROM SYS_CONFIG 
+2023-08-28 11:12:49.075 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysConfigMapper.selectList - ==> Parameters: 
+2023-08-28 11:12:49.077 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysConfigMapper.selectList - <==      Total: 16
+2023-08-28 11:12:49.078 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 11:12:49.078 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: bcae31e305f322d3699443d9fdcca0f9(String), admin(String), 系统管理(String), 列表(String), page(String), {"limit":"10","page":"1"}(String), 127.0.0.1(String), 7(Long), 2023-08-28T11:12:49.077(LocalDateTime)
+2023-08-28 11:12:49.082 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 11:12:49.706 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/dept/list.html
+2023-08-28 11:12:49.708 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:49.709 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:49.711 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:49.839 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/dept/tree
+2023-08-28 11:12:49.839 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:49.839 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:49.840 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:49.843 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectList - ==>  Preparing: SELECT dept_id,DEPT_NAME,PARENT_DEPT_ID,DEPT_PATH,NUMBER_LEVEL,BUSINESS_LEVEL,DEPT_LEVEL,DISABLE FROM SYS_DEPT_INFO WHERE (DISABLE = ?) 
+2023-08-28 11:12:49.843 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectList - ==> Parameters: 0(Integer)
+2023-08-28 11:12:49.844 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectList - <==      Total: 5
+2023-08-28 11:12:49.844 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/dept/deptList
+2023-08-28 11:12:49.845 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:49.845 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:49.847 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:49.860 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM ( SELECT dept_id,DEPT_NAME,PARENT_DEPT_ID,DEPT_PATH,NUMBER_LEVEL,BUSINESS_LEVEL,DEPT_LEVEL,DISABLE FROM SYS_DEPT_INFO ORDER BY NUMBER_LEVEL ASC ) TOTAL 
+2023-08-28 11:12:49.861 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectPage - ==> Parameters: 
+2023-08-28 11:12:49.863 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectPage - ==>  Preparing: SELECT dept_id,DEPT_NAME,PARENT_DEPT_ID,DEPT_PATH,NUMBER_LEVEL,BUSINESS_LEVEL,DEPT_LEVEL,DISABLE FROM SYS_DEPT_INFO ORDER BY NUMBER_LEVEL ASC LIMIT ?,? 
+2023-08-28 11:12:49.864 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 11:12:49.864 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectPage - <==      Total: 5
+2023-08-28 11:12:49.867 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 11:12:49.867 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: 507e4f07d88c2da55b47413aff77c16a(String), admin(String), 机构管理(String), 列表(String), page(String), {"limit":"10","page":"1"}(String), 127.0.0.1(String), 11(Long), 2023-08-28T11:12:49.865(LocalDateTime)
+2023-08-28 11:12:49.871 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 11:12:56.389 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/test/treeCheck.html
+2023-08-28 11:12:56.393 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:56.394 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:56.396 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:56.533 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/test/listTree
+2023-08-28 11:12:56.534 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:56.534 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:56.535 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:57.328 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/test/tree.html
+2023-08-28 11:12:57.330 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:57.330 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:57.331 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:57.394 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/test/listTree
+2023-08-28 11:12:57.394 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:57.395 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:57.395 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:58.215 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/test/list.html
+2023-08-28 11:12:58.216 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:58.217 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:58.217 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:59.046 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/list.html
+2023-08-28 11:12:59.047 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:59.047 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:59.048 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:59.121 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/list
+2023-08-28 11:12:59.122 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:59.122 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:59.123 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:59.126 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM app_demo 
+2023-08-28 11:12:59.126 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==> Parameters: 
+2023-08-28 11:12:59.128 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==>  Preparing: SELECT ID,NAME,CREATE_TIME,INFO,AGE FROM app_demo LIMIT ?,? 
+2023-08-28 11:12:59.128 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 11:12:59.129 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - <==      Total: 8
+2023-08-28 11:12:59.740 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/demo/list.html
+2023-08-28 11:12:59.741 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:59.742 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:59.743 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:59.790 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/demo/demoList
+2023-08-28 11:12:59.790 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:12:59.791 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:12:59.791 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:12:59.794 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM DEMO 
+2023-08-28 11:12:59.795 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==> Parameters: 
+2023-08-28 11:12:59.797 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==>  Preparing: SELECT id,name,info,create_time,age FROM DEMO LIMIT ?,? 
+2023-08-28 11:12:59.797 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 11:12:59.799 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - <==      Total: 8
+2023-08-28 11:16:37.646 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE (username = ?) 
+2023-08-28 11:16:37.646 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2023-08-28 11:16:37.647 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectOne - <==      Total: 1
+2023-08-28 11:16:37.648 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.updateById - ==>  Preparing: UPDATE SYS_USER_INFO SET username=?, password=?, old_password=?, nick_name=?, phone=?, email=?, disable=?, login_status=?, create_user_id=?, create_time=?, update_time=?, delete_time=?, login_time=?, dept_id=? WHERE user_id=? 
+2023-08-28 11:16:37.648 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.updateById - ==> Parameters: admin(String), 98124e2a4b96dc88ba01d49345f62a07(String), 98124e2a4b96dc88ba01d49345f62a07(String), admin(String), 13000001112(String), admin@163.com(String), 0(Integer), 0(Integer), (String), 2019-02-18T16:26:39(LocalDateTime), 2019-07-31T19:26:17(LocalDateTime), 2019-08-02T01:18:27(LocalDateTime), 2023-08-28T11:16:37.647(LocalDateTime), OR1200000703(String), 1115864462813077506(String)
+2023-08-28 11:16:37.649 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.updateById - <==    Updates: 1
+2023-08-28 11:16:37.650 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserLoginLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_LOGIN_LOG ( ID, USER_NAME, LOGIN_TIME, IP_ADDRESS, DURATION ) VALUES ( ?, ?, ?, ?, ? ) 
+2023-08-28 11:16:37.651 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserLoginLogMapper.insert - ==> Parameters: c5c8ce09169c26f0e5bf7ff237d0dfd8(String), admin(String), 2023-08-28T11:16:37.644(LocalDateTime), 127.0.0.1(String), 0(Long)
+2023-08-28 11:16:37.652 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserLoginLogMapper.insert - <==    Updates: 1
+2023-08-28 11:16:37.654 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 11:16:37.654 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: f8ee1ec8a7c57d823e4159c2ea81361b(String), admin(String), 登录模块(String), 用户登录(String), login(String), {}(String), 127.0.0.1(String), 16(Long), 2023-08-28T11:16:37.653(LocalDateTime)
+2023-08-28 11:16:37.656 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 11:16:37.678 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/
+2023-08-28 11:16:37.678 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:16:37.679 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:16:37.680 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:16:37.684 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO ORDER BY SORT DESC 
+2023-08-28 11:16:37.684 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 11:16:37.686 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 11:16:37.724 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/main.html
+2023-08-28 11:16:37.725 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:16:37.725 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:16:37.727 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:16:42.437 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/app/appdemo/add
+2023-08-28 11:16:42.442 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:16:42.442 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:16:42.443 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:16:50.327 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/add
+2023-08-28 11:16:50.330 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:16:50.331 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:16:50.332 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:16:50.334 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO ORDER BY SORT DESC 
+2023-08-28 11:16:50.334 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 11:16:50.336 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 11:17:11.934 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/add.html
+2023-08-28 11:17:11.937 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:17:11.938 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:17:11.939 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:17:34.804 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/add
+2023-08-28 11:17:34.809 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:17:34.809 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:17:34.810 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:17:35.501 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/app/appdemo/add
+2023-08-28 11:17:35.502 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:17:35.502 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:17:35.503 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:17:36.497 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/
+2023-08-28 11:17:36.498 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:17:36.498 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:17:36.499 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:17:36.500 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO ORDER BY SORT DESC 
+2023-08-28 11:17:36.501 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 11:17:36.502 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 11:17:36.536 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/main.html
+2023-08-28 11:17:36.536 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:17:36.537 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:17:36.538 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:17:39.549 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/list.html
+2023-08-28 11:17:39.553 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:17:39.553 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:17:39.554 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:17:39.626 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/list
+2023-08-28 11:17:39.626 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:17:39.627 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:17:39.627 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 11:17:39.630 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM app_demo 
+2023-08-28 11:17:39.630 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==> Parameters: 
+2023-08-28 11:17:39.632 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==>  Preparing: SELECT ID,NAME,CREATE_TIME,INFO,AGE FROM app_demo LIMIT ?,? 
+2023-08-28 11:17:39.633 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 11:17:39.633 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - <==      Total: 8
+2023-08-28 11:17:43.245 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/add.html
+2023-08-28 11:17:43.250 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 11:17:43.250 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 11:17:43.251 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:17:36.350 [springSessionRedisMessageListenerContainer-15] WARN  org.springframework.session.data.redis.RedisIndexedSessionRepository - Unable to publish SessionDestroyedEvent for session defd1a84-a341-4890-b259-740b100347fe
+2023-08-28 12:17:52.801 [MessageBroker-6] INFO  org.springframework.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 2, queued tasks = 0, completed tasks = 109]
+2023-08-28 12:22:09.952 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/add.html
+2023-08-28 12:22:10.119 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 12:22:10.121 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: 2dade984fc24c0479f1ca57bb753b5a0(String), Anonymous(String), 登录模块(String), 登录验证码(String), captcha(String), {}(String), 127.0.0.1(String), 57(Long), 2023-08-28T12:22:10.118(LocalDateTime)
+2023-08-28 12:22:10.124 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 12:22:10.204 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 12:22:10.206 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: 15c419ae3ca92deaf57c35841d55f9e4(String), Anonymous(String), 登录模块(String), 登录验证码(String), captcha(String), {}(String), 127.0.0.1(String), 27(Long), 2023-08-28T12:22:10.203(LocalDateTime)
+2023-08-28 12:22:10.208 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 12:22:23.321 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE (username = ?) 
+2023-08-28 12:22:23.322 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2023-08-28 12:22:23.323 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectOne - <==      Total: 1
+2023-08-28 12:22:23.324 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.updateById - ==>  Preparing: UPDATE SYS_USER_INFO SET username=?, password=?, old_password=?, nick_name=?, phone=?, email=?, disable=?, login_status=?, create_user_id=?, create_time=?, update_time=?, delete_time=?, login_time=?, dept_id=? WHERE user_id=? 
+2023-08-28 12:22:23.325 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.updateById - ==> Parameters: admin(String), 98124e2a4b96dc88ba01d49345f62a07(String), 98124e2a4b96dc88ba01d49345f62a07(String), admin(String), 13000001112(String), admin@163.com(String), 0(Integer), 0(Integer), (String), 2019-02-18T08:26:39(LocalDateTime), 2019-07-31T11:26:17(LocalDateTime), 2019-08-01T17:18:27(LocalDateTime), 2023-08-28T12:22:23.324(LocalDateTime), OR1200000703(String), 1115864462813077506(String)
+2023-08-28 12:22:23.326 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.updateById - <==    Updates: 1
+2023-08-28 12:22:23.327 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserLoginLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_LOGIN_LOG ( ID, USER_NAME, LOGIN_TIME, IP_ADDRESS, DURATION ) VALUES ( ?, ?, ?, ?, ? ) 
+2023-08-28 12:22:23.327 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserLoginLogMapper.insert - ==> Parameters: 6f6108cada0a440ab7cbfcec293ce90f(String), admin(String), 2023-08-28T12:22:23.318(LocalDateTime), 127.0.0.1(String), 0(Long)
+2023-08-28 12:22:23.328 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserLoginLogMapper.insert - <==    Updates: 1
+2023-08-28 12:22:23.331 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 12:22:23.332 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: d39c801300a3260b2452d4efe57caa65(String), admin(String), 登录模块(String), 用户登录(String), login(String), {}(String), 127.0.0.1(String), 24(Long), 2023-08-28T12:22:23.330(LocalDateTime)
+2023-08-28 12:22:23.334 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 12:22:23.354 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/
+2023-08-28 12:22:23.355 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:22:23.355 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:22:23.356 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:22:23.360 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO ORDER BY SORT DESC 
+2023-08-28 12:22:23.360 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 12:22:23.362 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 12:22:23.366 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO ORDER BY SORT DESC 
+2023-08-28 12:22:23.366 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 12:22:23.369 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 12:22:23.406 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/main.html
+2023-08-28 12:22:23.407 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:22:23.407 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:22:23.408 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:23:01.595 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/list.html
+2023-08-28 12:23:01.602 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:23:01.603 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:23:01.603 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:23:01.684 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/list
+2023-08-28 12:23:01.685 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:23:01.685 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:23:01.686 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:23:01.688 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM app_demo 
+2023-08-28 12:23:01.688 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==> Parameters: 
+2023-08-28 12:23:01.691 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==>  Preparing: SELECT ID,NAME,CREATE_TIME,INFO,AGE FROM app_demo LIMIT ?,? 
+2023-08-28 12:23:01.691 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 12:23:01.692 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.appdemo.mapper.AppDemoMapper.selectPage - <==      Total: 8
+2023-08-28 12:23:03.506 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/appdemo/add.html
+2023-08-28 12:23:03.507 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:23:03.508 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:23:03.508 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:24:27.318 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/demo/list.html
+2023-08-28 12:24:27.323 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:24:27.323 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:24:27.324 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:24:27.404 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/demo/demoList
+2023-08-28 12:24:27.405 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:24:27.405 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:24:27.406 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:24:27.411 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM DEMO 
+2023-08-28 12:24:27.411 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==> Parameters: 
+2023-08-28 12:24:27.413 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==>  Preparing: SELECT id,name,info,create_time,age FROM DEMO LIMIT ?,? 
+2023-08-28 12:24:27.413 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 12:24:27.414 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.report.mapper.DemoMapper.selectPage - <==      Total: 8
+2023-08-28 12:24:46.924 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/test/list.html
+2023-08-28 12:24:46.929 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:24:46.929 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:24:46.930 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:24:51.539 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/test/treeCheck.html
+2023-08-28 12:24:51.545 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:24:51.545 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:24:51.546 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:24:51.587 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/test/listTree
+2023-08-28 12:24:51.588 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:24:51.588 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:24:51.589 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:24:55.908 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/file/list.html
+2023-08-28 12:24:55.912 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:24:55.912 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:24:55.913 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:24:57.263 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/files/list.html
+2023-08-28 12:24:57.264 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:24:57.264 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:24:57.265 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:24:57.379 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/files/list
+2023-08-28 12:24:57.379 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:24:57.380 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:24:57.381 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:24:57.389 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysFilesMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM ( SELECT ID,CREATE_TIME,DISABLE,UPDATE_TIME,FILE_KEY,HEIGHT,MEDIA_TYPE,NAME,PATH,FILE_SIZE,SUFFIX,THUMB_PATH,FILE_TYPE,WIDTH FROM SYS_FILES ) TOTAL 
+2023-08-28 12:24:57.389 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysFilesMapper.selectPage - ==> Parameters: 
+2023-08-28 12:24:57.396 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysFilesMapper.selectPage - ==>  Preparing: SELECT ID,CREATE_TIME,DISABLE,UPDATE_TIME,FILE_KEY,HEIGHT,MEDIA_TYPE,NAME,PATH,FILE_SIZE,SUFFIX,THUMB_PATH,FILE_TYPE,WIDTH FROM SYS_FILES LIMIT ?,? 
+2023-08-28 12:24:57.397 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysFilesMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 12:24:57.398 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysFilesMapper.selectPage - <==      Total: 10
+2023-08-28 12:25:09.994 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/user/list.html
+2023-08-28 12:25:10.000 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:25:10.000 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:25:10.001 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:25:10.006 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - ==>  Preparing: SELECT ROLE_ID,PID,NUMBER_LEVEL,BUSINESS_LEVEL,ROLE_NAME,DESCRIPTION,ROLE_CODE,CREATE_TIME,DISABLE FROM SYS_ROLE_INFO WHERE (DISABLE = ?) 
+2023-08-28 12:25:10.007 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - ==> Parameters: 0(Integer)
+2023-08-28 12:25:10.008 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - <==      Total: 7
+2023-08-28 12:25:10.087 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/dept/tree
+2023-08-28 12:25:10.087 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:25:10.088 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:25:10.088 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:25:10.091 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectList - ==>  Preparing: SELECT dept_id,DEPT_NAME,PARENT_DEPT_ID,DEPT_PATH,NUMBER_LEVEL,BUSINESS_LEVEL,DEPT_LEVEL,DISABLE FROM SYS_DEPT_INFO WHERE (DISABLE = ?) 
+2023-08-28 12:25:10.092 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectList - ==> Parameters: 0(Integer)
+2023-08-28 12:25:10.092 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/user/userList
+2023-08-28 12:25:10.095 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectList - <==      Total: 5
+2023-08-28 12:25:10.098 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:25:10.099 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:25:10.100 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:25:10.106 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==>  Preparing: SELECT COUNT(1) FROM ( SELECT A.USER_ID, A.USERNAME, A.NICK_NAME, A.PHONE, A.CREATE_TIME, A.UPDATE_TIME, A.EMAIL, A.DISABLE, A.LOGIN_STATUS, A.CREATE_USER_ID, A.DELETE_TIME, A.LOGIN_TIME, A.DEPT_ID, B.DEPT_NAME, B.DEPT_PATH FROM SYS_USER_INFO A LEFT JOIN SYS_DEPT_INFO B ON A.DEPT_ID = B.DEPT_ID ORDER BY A.DISABLE DESC, A.LOGIN_TIME DESC ) TOTAL 
+2023-08-28 12:25:10.107 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==> Parameters: 
+2023-08-28 12:25:10.111 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==>  Preparing: SELECT A.USER_ID, A.USERNAME, A.NICK_NAME, A.PHONE, A.CREATE_TIME, A.UPDATE_TIME, A.EMAIL, A.DISABLE, A.LOGIN_STATUS, A.CREATE_USER_ID, A.DELETE_TIME, A.LOGIN_TIME, A.DEPT_ID, B.DEPT_NAME, B.DEPT_PATH FROM SYS_USER_INFO A LEFT JOIN SYS_DEPT_INFO B ON A.DEPT_ID = B.DEPT_ID ORDER BY A.DISABLE DESC, A.LOGIN_TIME DESC LIMIT ?,? 
+2023-08-28 12:25:10.112 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 12:25:10.115 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - <==      Total: 10
+2023-08-28 12:25:10.116 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:10.116 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1147850266972839937(String)
+2023-08-28 12:25:10.117 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:10.118 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:10.119 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1115864230968729601(String)
+2023-08-28 12:25:10.120 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:10.121 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:10.122 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1138460331855884289(String)
+2023-08-28 12:25:10.123 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 2
+2023-08-28 12:25:10.124 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:10.124 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1138463481715273730(String)
+2023-08-28 12:25:10.126 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:10.126 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:10.127 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1138465382401953793(String)
+2023-08-28 12:25:10.127 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:10.128 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:10.128 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1157842323041148930(String)
+2023-08-28 12:25:10.129 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:10.130 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:10.130 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1157842678214811649(String)
+2023-08-28 12:25:10.131 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:10.131 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:10.132 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1227877059054125057(String)
+2023-08-28 12:25:10.132 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:10.133 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:10.133 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:25:10.134 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:10.135 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:10.135 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1189475248153251842(String)
+2023-08-28 12:25:10.136 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:10.138 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 12:25:10.139 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: c6722c8aba027484314ba5c05a7ab4ab(String), admin(String), 用户管理(String), 列表(String), page(String), {"limit":"10","page":"1"}(String), 127.0.0.1(String), 34(Long), 2023-08-28T12:25:10.137(LocalDateTime)
+2023-08-28 12:25:10.141 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 12:25:25.169 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/user/userList
+2023-08-28 12:25:25.174 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:25:25.175 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:25:25.176 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:25:25.180 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectOne - ==>  Preparing: SELECT dept_id,DEPT_NAME,PARENT_DEPT_ID,DEPT_PATH,NUMBER_LEVEL,BUSINESS_LEVEL,DEPT_LEVEL,DISABLE FROM SYS_DEPT_INFO WHERE (dept_id = ?) 
+2023-08-28 12:25:25.181 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectOne - ==> Parameters: 1325121829601280001(String)
+2023-08-28 12:25:25.182 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectOne - <==      Total: 1
+2023-08-28 12:25:25.183 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==>  Preparing: SELECT COUNT(1) FROM ( SELECT A.USER_ID, A.USERNAME, A.NICK_NAME, A.PHONE, A.CREATE_TIME, A.UPDATE_TIME, A.EMAIL, A.DISABLE, A.LOGIN_STATUS, A.CREATE_USER_ID, A.DELETE_TIME, A.LOGIN_TIME, A.DEPT_ID, B.DEPT_NAME, B.DEPT_PATH FROM SYS_USER_INFO A LEFT JOIN SYS_DEPT_INFO B ON A.DEPT_ID = B.DEPT_ID WHERE A.DEPT_ID IN ( SELECT DISTINCT DEPT_ID FROM SYS_DEPT_INFO WHERE BUSINESS_LEVEL LIKE CONCAT(?,'%') ) ORDER BY A.DISABLE DESC, A.LOGIN_TIME DESC ) TOTAL 
+2023-08-28 12:25:25.189 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==> Parameters: 4444:1325121829601280001:(String)
+2023-08-28 12:25:25.192 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==>  Preparing: SELECT A.USER_ID, A.USERNAME, A.NICK_NAME, A.PHONE, A.CREATE_TIME, A.UPDATE_TIME, A.EMAIL, A.DISABLE, A.LOGIN_STATUS, A.CREATE_USER_ID, A.DELETE_TIME, A.LOGIN_TIME, A.DEPT_ID, B.DEPT_NAME, B.DEPT_PATH FROM SYS_USER_INFO A LEFT JOIN SYS_DEPT_INFO B ON A.DEPT_ID = B.DEPT_ID WHERE A.DEPT_ID IN ( SELECT DISTINCT DEPT_ID FROM SYS_DEPT_INFO WHERE BUSINESS_LEVEL LIKE CONCAT(?,'%') ) ORDER BY A.DISABLE DESC, A.LOGIN_TIME DESC LIMIT ?,? 
+2023-08-28 12:25:25.192 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==> Parameters: 4444:1325121829601280001:(String), 0(Long), 10(Long)
+2023-08-28 12:25:25.193 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - <==      Total: 2
+2023-08-28 12:25:25.194 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:25.194 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1147850266972839937(String)
+2023-08-28 12:25:25.195 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:25.196 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:25.196 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1115864230968729601(String)
+2023-08-28 12:25:25.197 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:25.198 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 12:25:25.198 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: 4b6aeb5da04b7f2c51054dd2f464e989(String), admin(String), 用户管理(String), 列表(String), page(String), {"deptId":"1325121829601280001","limit":"10","page":"1"}(String), 127.0.0.1(String), 20(Long), 2023-08-28T12:25:25.197(LocalDateTime)
+2023-08-28 12:25:25.200 [http-nio-8888-exec-5] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 12:25:42.855 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/user/userList
+2023-08-28 12:25:42.860 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:25:42.861 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:25:42.861 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:25:42.866 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectOne - ==>  Preparing: SELECT dept_id,DEPT_NAME,PARENT_DEPT_ID,DEPT_PATH,NUMBER_LEVEL,BUSINESS_LEVEL,DEPT_LEVEL,DISABLE FROM SYS_DEPT_INFO WHERE (dept_id = ?) 
+2023-08-28 12:25:42.867 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectOne - ==> Parameters: 1325122003077693442(String)
+2023-08-28 12:25:42.868 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectOne - <==      Total: 1
+2023-08-28 12:25:42.872 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==>  Preparing: SELECT COUNT(1) FROM ( SELECT A.USER_ID, A.USERNAME, A.NICK_NAME, A.PHONE, A.CREATE_TIME, A.UPDATE_TIME, A.EMAIL, A.DISABLE, A.LOGIN_STATUS, A.CREATE_USER_ID, A.DELETE_TIME, A.LOGIN_TIME, A.DEPT_ID, B.DEPT_NAME, B.DEPT_PATH FROM SYS_USER_INFO A LEFT JOIN SYS_DEPT_INFO B ON A.DEPT_ID = B.DEPT_ID WHERE A.DEPT_ID IN ( SELECT DISTINCT DEPT_ID FROM SYS_DEPT_INFO WHERE BUSINESS_LEVEL LIKE CONCAT(?,'%') ) ORDER BY A.DISABLE DESC, A.LOGIN_TIME DESC ) TOTAL 
+2023-08-28 12:25:42.872 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==> Parameters: 4444:1325122003077693442:(String)
+2023-08-28 12:25:42.873 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==>  Preparing: SELECT A.USER_ID, A.USERNAME, A.NICK_NAME, A.PHONE, A.CREATE_TIME, A.UPDATE_TIME, A.EMAIL, A.DISABLE, A.LOGIN_STATUS, A.CREATE_USER_ID, A.DELETE_TIME, A.LOGIN_TIME, A.DEPT_ID, B.DEPT_NAME, B.DEPT_PATH FROM SYS_USER_INFO A LEFT JOIN SYS_DEPT_INFO B ON A.DEPT_ID = B.DEPT_ID WHERE A.DEPT_ID IN ( SELECT DISTINCT DEPT_ID FROM SYS_DEPT_INFO WHERE BUSINESS_LEVEL LIKE CONCAT(?,'%') ) ORDER BY A.DISABLE DESC, A.LOGIN_TIME DESC LIMIT ?,? 
+2023-08-28 12:25:42.874 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - ==> Parameters: 4444:1325122003077693442:(String), 0(Long), 10(Long)
+2023-08-28 12:25:42.874 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.UserMapper.queryList - <==      Total: 3
+2023-08-28 12:25:42.875 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:42.876 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1157842323041148930(String)
+2023-08-28 12:25:42.876 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:42.877 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:42.877 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1157842678214811649(String)
+2023-08-28 12:25:42.878 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:42.879 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==>  Preparing: SELECT r.ROLE_ID, r.ROLE_NAME, r.DESCRIPTION, r.ROLE_CODE, r.CREATE_TIME, r.DISABLE FROM SYS_ROLE_INFO r INNER JOIN SYS_USER_ROLE ur ON ur.ROLE_ID = r.ROLE_ID WHERE ur.USER_ID = ? AND r.DISABLE = 0 
+2023-08-28 12:25:42.879 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - ==> Parameters: 1138463107453333505(String)
+2023-08-28 12:25:42.879 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.queryUserRole - <==      Total: 1
+2023-08-28 12:25:42.881 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 12:25:42.881 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: 12a3d2dde1785a740fce02085a94a62b(String), admin(String), 用户管理(String), 列表(String), page(String), {"deptId":"1325122003077693442","limit":"10","page":"1"}(String), 127.0.0.1(String), 15(Long), 2023-08-28T12:25:42.880(LocalDateTime)
+2023-08-28 12:25:42.883 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 12:25:44.853 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/role/list.html
+2023-08-28 12:25:44.854 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:25:44.854 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:25:44.857 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:25:44.946 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/role/roleList
+2023-08-28 12:25:44.947 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:25:44.947 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:25:44.947 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:25:44.951 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - ==>  Preparing: SELECT ROLE_ID,PID,NUMBER_LEVEL,BUSINESS_LEVEL,ROLE_NAME,DESCRIPTION,ROLE_CODE,CREATE_TIME,DISABLE FROM SYS_ROLE_INFO 
+2023-08-28 12:25:44.952 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - ==> Parameters: 
+2023-08-28 12:25:44.953 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - <==      Total: 7
+2023-08-28 12:25:50.338 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/menu/list.html
+2023-08-28 12:25:50.343 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:25:50.344 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:25:50.345 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:25:50.428 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/menu/menuList
+2023-08-28 12:25:50.429 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 12:25:50.429 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 12:25:50.430 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 12:25:50.432 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO 
+2023-08-28 12:25:50.433 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 12:25:50.435 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 12:47:52.817 [MessageBroker-2] INFO  org.springframework.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 1, completed tasks = 141]
+2023-08-28 13:17:52.822 [MessageBroker-6] INFO  org.springframework.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 1, completed tasks = 172]
+2023-08-28 13:47:52.835 [MessageBroker-1] INFO  org.springframework.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 1, completed tasks = 203]
+2023-08-28 13:49:05.174 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/dataDict/dictList.html
+2023-08-28 13:49:05.458 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 13:49:05.461 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: bf25cbc775738ad983c802ee18079b56(String), Anonymous(String), 登录模块(String), 登录验证码(String), captcha(String), {}(String), 127.0.0.1(String), 81(Long), 2023-08-28T13:49:05.442(LocalDateTime)
+2023-08-28 13:49:05.467 [http-nio-8888-exec-4] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 13:49:05.622 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 13:49:05.622 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: ade3392ddf41492a5721610cbb20f9a2(String), Anonymous(String), 登录模块(String), 登录验证码(String), captcha(String), {}(String), 127.0.0.1(String), 30(Long), 2023-08-28T13:49:05.620(LocalDateTime)
+2023-08-28 13:49:05.625 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 13:49:11.380 [http-nio-8888-exec-5] ERROR cn.enterprisys.web.commons.exception.ExceptionAdvice - java.lang.Exception: 验证码不正确
+java.lang.Exception: 验证码不正确
+	at cn.enterprisys.web.modules.sys.service.impl.SignServiceImpl.checkLogin(SignServiceImpl.java:44)
+	at cn.enterprisys.web.modules.sys.service.impl.SignServiceImpl$$FastClassBySpringCGLIB$$7827a4f8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.enterprisys.web.modules.sys.service.impl.SignServiceImpl$$EnhancerBySpringCGLIB$$ce5148.checkLogin(<generated>)
+	at cn.enterprisys.web.modules.sys.conctroller.SignController.login(SignController.java:66)
+	at cn.enterprisys.web.modules.sys.conctroller.SignController$$FastClassBySpringCGLIB$$adb55e5f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at cn.enterprisys.web.commons.aspect.SysLogAspect.around(SysLogAspect.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.enterprisys.web.modules.sys.conctroller.SignController$$EnhancerBySpringCGLIB$$f78e8193.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:64)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at link.ahsj.core.http.xss.XssFilter.doFilter(XssFilter.java:89)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:209)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2023-08-28 13:49:18.089 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE (username = ?) 
+2023-08-28 13:49:18.090 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2023-08-28 13:49:18.092 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectOne - <==      Total: 1
+2023-08-28 13:49:18.094 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.updateById - ==>  Preparing: UPDATE SYS_USER_INFO SET username=?, password=?, old_password=?, nick_name=?, phone=?, email=?, disable=?, login_status=?, create_user_id=?, create_time=?, update_time=?, delete_time=?, login_time=?, dept_id=? WHERE user_id=? 
+2023-08-28 13:49:18.095 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.updateById - ==> Parameters: admin(String), 98124e2a4b96dc88ba01d49345f62a07(String), 98124e2a4b96dc88ba01d49345f62a07(String), admin(String), 13000001112(String), admin@163.com(String), 0(Integer), 0(Integer), (String), 2019-02-18T00:26:39(LocalDateTime), 2019-07-31T03:26:17(LocalDateTime), 2019-08-01T09:18:27(LocalDateTime), 2023-08-28T13:49:18.092(LocalDateTime), OR1200000703(String), 1115864462813077506(String)
+2023-08-28 13:49:18.096 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.updateById - <==    Updates: 1
+2023-08-28 13:49:18.097 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserLoginLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_LOGIN_LOG ( ID, USER_NAME, LOGIN_TIME, IP_ADDRESS, DURATION ) VALUES ( ?, ?, ?, ?, ? ) 
+2023-08-28 13:49:18.098 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserLoginLogMapper.insert - ==> Parameters: ea6624ad4f4791d8f6f513c6af45ab55(String), admin(String), 2023-08-28T13:49:18.085(LocalDateTime), 127.0.0.1(String), 0(Long)
+2023-08-28 13:49:18.099 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserLoginLogMapper.insert - <==    Updates: 1
+2023-08-28 13:49:18.104 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 13:49:18.104 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: fd31ab4466770d0ae9a7795b2f4dd4b0(String), admin(String), 登录模块(String), 用户登录(String), login(String), {}(String), 127.0.0.1(String), 29(Long), 2023-08-28T13:49:18.102(LocalDateTime)
+2023-08-28 13:49:18.106 [http-nio-8888-exec-7] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 13:49:18.123 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/
+2023-08-28 13:49:18.124 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:49:18.125 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:49:18.128 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:49:18.131 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO ORDER BY SORT DESC 
+2023-08-28 13:49:18.131 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 13:49:18.136 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 13:49:18.141 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO ORDER BY SORT DESC 
+2023-08-28 13:49:18.141 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 13:49:18.144 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 13:49:18.185 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/main.html
+2023-08-28 13:49:18.186 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:49:18.186 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:49:18.187 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:49:29.846 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/role/list.html
+2023-08-28 13:49:29.851 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:49:29.853 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:49:29.853 [http-nio-8888-exec-6] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:49:29.932 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/role/roleList
+2023-08-28 13:49:29.933 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:49:29.933 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:49:29.935 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:49:29.940 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - ==>  Preparing: SELECT ROLE_ID,PID,NUMBER_LEVEL,BUSINESS_LEVEL,ROLE_NAME,DESCRIPTION,ROLE_CODE,CREATE_TIME,DISABLE FROM SYS_ROLE_INFO 
+2023-08-28 13:49:29.940 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - ==> Parameters: 
+2023-08-28 13:49:29.941 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - <==      Total: 7
+2023-08-28 13:49:31.998 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/role/add.html
+2023-08-28 13:49:32.002 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:49:32.003 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:49:32.003 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:49:32.106 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/select/menuTree
+2023-08-28 13:49:32.107 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:49:32.108 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:49:32.110 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:49:32.110 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/select/roleTree
+2023-08-28 13:49:32.111 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:49:32.111 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:49:32.112 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:49:32.121 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - ==>  Preparing: SELECT ROLE_ID,PID,NUMBER_LEVEL,BUSINESS_LEVEL,ROLE_NAME,DESCRIPTION,ROLE_CODE,CREATE_TIME,DISABLE FROM SYS_ROLE_INFO WHERE (DISABLE = ?) ORDER BY BUSINESS_LEVEL DESC 
+2023-08-28 13:49:32.123 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - ==> Parameters: 0(Integer)
+2023-08-28 13:49:32.123 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysRoleInfoMapper.selectList - <==      Total: 7
+2023-08-28 13:49:32.125 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO WHERE (disable = ?) ORDER BY sort DESC 
+2023-08-28 13:49:32.126 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 0(Integer)
+2023-08-28 13:49:32.128 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 13:50:03.134 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/menu/list.html
+2023-08-28 13:50:03.140 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:50:03.140 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:50:03.141 [http-nio-8888-exec-2] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:50:03.214 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/menu/menuList
+2023-08-28 13:50:03.214 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:50:03.215 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:50:03.216 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:50:03.219 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==>  Preparing: SELECT menu_id,menu_name,parent_menu_code,menu_icon,menu_type,sort,menu_code,menu_url,authorization,disable FROM SYS_MENU_INFO 
+2023-08-28 13:50:03.219 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - ==> Parameters: 
+2023-08-28 13:50:03.221 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysMenuMapper.selectList - <==      Total: 94
+2023-08-28 13:50:05.212 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/dataDict/dictList.html
+2023-08-28 13:50:05.212 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:50:05.213 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:50:05.213 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:50:05.216 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDictMapper.selectList - ==>  Preparing: SELECT DICE_CODE,DICE_NAME FROM SYS_DICE_INFO ORDER BY SORT DESC 
+2023-08-28 13:50:05.216 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDictMapper.selectList - ==> Parameters: 
+2023-08-28 13:50:05.218 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDictMapper.selectList - <==      Total: 14
+2023-08-28 13:50:05.294 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/dataDict/dictList
+2023-08-28 13:50:05.294 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:50:05.295 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:50:05.296 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:50:05.299 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDictMapper.selectList - ==>  Preparing: SELECT id,DICE_NAME,DICE_CODE,PARENT_DICE_CODE,DICE_VALUE,SORT,DESCRIPTION,DISABLE FROM SYS_DICE_INFO 
+2023-08-28 13:50:05.300 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDictMapper.selectList - ==> Parameters: 
+2023-08-28 13:50:05.303 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDictMapper.selectList - <==      Total: 14
+2023-08-28 13:50:05.303 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 13:50:05.304 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: 29ca00f4273e03055564d3613d8162a5(String), admin(String), 数据字典(String), 列表(String), page(String), {"diceCodes":"","dictName":""}(String), 127.0.0.1(String), 5(Long), 2023-08-28T13:50:05.303(LocalDateTime)
+2023-08-28 13:50:05.307 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 13:51:15.737 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/config/list.html
+2023-08-28 13:51:15.747 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:51:15.747 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:51:15.749 [http-nio-8888-exec-8] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:51:15.855 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/config/configList
+2023-08-28 13:51:15.856 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:51:15.857 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:51:15.859 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:51:15.866 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysConfigMapper.selectList - ==>  Preparing: SELECT config_key,parent_key,info,config_value,disable FROM SYS_CONFIG 
+2023-08-28 13:51:15.867 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysConfigMapper.selectList - ==> Parameters: 
+2023-08-28 13:51:15.874 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysConfigMapper.selectList - <==      Total: 16
+2023-08-28 13:51:15.877 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 13:51:15.879 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: d24634a1ba9a9a0f6b81ceb06c7a2a22(String), admin(String), 系统管理(String), 列表(String), page(String), {"limit":"10","page":"1"}(String), 127.0.0.1(String), 10(Long), 2023-08-28T13:51:15.874(LocalDateTime)
+2023-08-28 13:51:15.883 [http-nio-8888-exec-10] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 13:51:18.997 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/dept/list.html
+2023-08-28 13:51:19.001 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:51:19.002 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:51:19.002 [http-nio-8888-exec-1] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:51:19.089 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/dept/tree
+2023-08-28 13:51:19.090 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:51:19.090 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:51:19.091 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:51:19.095 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectList - ==>  Preparing: SELECT dept_id,DEPT_NAME,PARENT_DEPT_ID,DEPT_PATH,NUMBER_LEVEL,BUSINESS_LEVEL,DEPT_LEVEL,DISABLE FROM SYS_DEPT_INFO WHERE (DISABLE = ?) 
+2023-08-28 13:51:19.097 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectList - ==> Parameters: 0(Integer)
+2023-08-28 13:51:19.097 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.commons.interceptors.LoginInterceptor - 当前访问接口:/dept/deptList
+2023-08-28 13:51:19.098 [http-nio-8888-exec-9] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectList - <==      Total: 5
+2023-08-28 13:51:19.101 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,old_password,nick_name,phone,email,disable,login_status,create_user_id,create_time,update_time,delete_time,login_time,remark,dept_id FROM SYS_USER_INFO WHERE user_id=? 
+2023-08-28 13:51:19.102 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - ==> Parameters: 1115864462813077506(String)
+2023-08-28 13:51:19.103 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserMapper.selectById - <==      Total: 1
+2023-08-28 13:51:19.108 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM ( SELECT dept_id,DEPT_NAME,PARENT_DEPT_ID,DEPT_PATH,NUMBER_LEVEL,BUSINESS_LEVEL,DEPT_LEVEL,DISABLE FROM SYS_DEPT_INFO ORDER BY NUMBER_LEVEL ASC ) TOTAL 
+2023-08-28 13:51:19.108 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectPage - ==> Parameters: 
+2023-08-28 13:51:19.113 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectPage - ==>  Preparing: SELECT dept_id,DEPT_NAME,PARENT_DEPT_ID,DEPT_PATH,NUMBER_LEVEL,BUSINESS_LEVEL,DEPT_LEVEL,DISABLE FROM SYS_DEPT_INFO ORDER BY NUMBER_LEVEL ASC LIMIT ?,? 
+2023-08-28 13:51:19.114 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2023-08-28 13:51:19.114 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysDeptMapper.selectPage - <==      Total: 5
+2023-08-28 13:51:19.115 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==>  Preparing: INSERT INTO SYS_USER_OPERATION_LOG ( ID, USER_NAME, OPERATION_MODULE, OPERATION_TYPE, VISIT_METHOD, PARAMETERS, IP_ADDRESS, DURATION, OPERATION_TIME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-08-28 13:51:19.116 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - ==> Parameters: 149372108be5941060b8446a3289e6a6(String), admin(String), 机构管理(String), 列表(String), page(String), {"limit":"10","page":"1"}(String), 127.0.0.1(String), 9(Long), 2023-08-28T13:51:19.115(LocalDateTime)
+2023-08-28 13:51:19.119 [http-nio-8888-exec-3] DEBUG cn.enterprisys.web.modules.sys.mapper.SysUserOperationLogMapper.insert - <==    Updates: 1
+2023-08-28 16:18:56.008 [springSessionRedisMessageListenerContainer-30] WARN  org.springframework.session.data.redis.RedisIndexedSessionRepository - Unable to publish SessionDestroyedEvent for session 674e2156-f86f-4ff2-8d68-07df9db66283
+2023-08-28 16:19:10.795 [MessageBroker-1] INFO  org.springframework.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 2, queued tasks = 0, completed tasks = 228]
+2023-08-28 17:42:07.033 [MessageBroker-5] INFO  org.springframework.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 2, queued tasks = 0, completed tasks = 233]
+2023-08-28 18:15:57.703 [SpringContextShutdownHook] INFO  org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2023-08-28 18:15:57.703 [SpringContextShutdownHook] INFO  org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2023-08-28 18:15:57.703 [SpringContextShutdownHook] INFO  org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2023-08-28 18:15:57.713 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'brokerChannelExecutor'
+2023-08-28 18:15:57.713 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2023-08-28 18:15:57.714 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2023-08-28 18:15:57.714 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2023-08-28 18:15:57.843 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2023-08-28 18:15:57.849 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
